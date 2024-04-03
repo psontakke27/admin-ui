@@ -1,0 +1,63 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+#outlined-basic {
+  width: 100%;
+}
+.admin-interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-input {
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.delete-button {
+  margin-top: 20px;
+}
+/* Styles for smaller screens (max-width: 640px) */
+@media (max-width: 640px) {
+  .user-table-cell {
+    font-size: 12px;
+    white-space: nowrap; /* Prevent text wrapping in cells */
+    overflow: hidden; /* Hide overflowed content */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowed content */
+  }
+
+  .user-table-cell.name-cell {
+    width: 40%;
+  }
+
+  .user-table-cell.email-cell,
+  .user-table-cell.role-cell,
+  .user-table-cell.checkbox-cell,
+  .user-table-cell.actions-cell {
+    width: 20%;
+    display: table-cell;
+  }
+
+  .user-table-cell.actions-cell {
+    text-align: center;
+  }
+
+  .user-table-cell.actions-cell button {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .user-table-cell.actions-cell button:first-child {
+    margin-left: 0;
+  }
+
+  .user-table-cell.actions-cell button:last-child {
+    margin-right: 0;
+  }
+}
+.user-table {
+  width: 100%;
+}
